@@ -1,5 +1,13 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+// astro.config.ts
+import { defineConfig } from "astro/config";
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  trailingSlash: "always",
+  // Prod
+  // site: "https://www.kelx.fr/",
+  // Local
+  site: "http://localhost:4321/",
+  base: "/",
+  trailingSlash: "always",
+  output: "server",
+});

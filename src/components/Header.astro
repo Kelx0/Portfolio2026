@@ -1,0 +1,81 @@
+---
+const date = new Date(); 
+console.log();
+---
+<header class="header wrapper">
+    <a href={Astro.site?.href || "/"} class="logo">
+        <h1 class="title">KELX</h1>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <p class="year">@2020-{date.getFullYear()}</p>
+</header>
+
+<style lang="scss">
+.header{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+   .logo{
+    text-decoration: none;
+    color: var(--color-primary);
+     .title{
+        font-size: 16px;    
+    }
+   }
+
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+
+            li{
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                    font-family: var(--font-secondary);
+                    font-size: 14px;
+                    font-weight: 300;
+                    font-stretch: 130%;
+                    text-transform: uppercase;
+                    transition: all 0.3s ease-in-out;
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 2px;
+                        background: currentColor;
+                        transition: width 0.3s ease-in-out;
+                    }
+                    
+                    &:hover, &:active{
+                        font-weight: 700;
+                        font-stretch: 120%;
+                        &::after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .year{
+        font-family: var(--font-secondary);
+        font-size: 14px;
+        font-weight: 700;
+        font-stretch: 120%;
+    }
+}
+</style>

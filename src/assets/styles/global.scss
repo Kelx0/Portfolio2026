@@ -1,0 +1,107 @@
+	/* ClashGrotesk - Variable Font */
+	@font-face {
+		font-family: 'ClashGrotesk';
+		src: url('/fonts/ClashGrotesk/ClashGrotesk-Variable.woff2') format('woff2'),
+		     url('/fonts/ClashGrotesk/ClashGrotesk-Variable.ttf') format('truetype');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	/* ClashGrotesk - Fallback Weights */
+	@font-face {
+		font-family: 'ClashGrotesk';
+		src: url('/fonts/ClashGrotesk/ClashGrotesk-Extralight.woff2') format('woff2'),
+		     url('/fonts/ClashGrotesk/ClashGrotesk-Extralight.ttf') format('truetype');
+		font-weight: 200;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'ClashGrotesk';
+		src: url('/fonts/ClashGrotesk/ClashGrotesk-Light.woff2') format('woff2'),
+		     url('/fonts/ClashGrotesk/ClashGrotesk-Light.ttf') format('truetype');
+		font-weight: 300;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'ClashGrotesk';
+		src: url('/fonts/ClashGrotesk/ClashGrotesk-Regular.woff2') format('woff2'),
+		     url('/fonts/ClashGrotesk/ClashGrotesk-Regular.ttf') format('truetype');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'ClashGrotesk';
+		src: url('/fonts/ClashGrotesk/ClashGrotesk-Medium.woff2') format('woff2'),
+		     url('/fonts/ClashGrotesk/ClashGrotesk-Medium.ttf') format('truetype');
+		font-weight: 500;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'ClashGrotesk';
+		src: url('/fonts/ClashGrotesk/ClashGrotesk-Semibold.woff2') format('woff2'),
+		     url('/fonts/ClashGrotesk/ClashGrotesk-Semibold.ttf') format('truetype');
+		font-weight: 600;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'ClashGrotesk';
+		src: url('/fonts/ClashGrotesk/ClashGrotesk-Bold.woff2') format('woff2'),
+		     url('/fonts/ClashGrotesk/ClashGrotesk-Bold.ttf') format('truetype');
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	/* Inconsolata - Variable Font */
+	@font-face {
+		font-family: 'Inconsolata';
+		src: url('/fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype-variations');
+		font-weight: 100 900;
+		font-stretch: 75% 150%;
+		font-style: normal;
+		font-display: swap;
+	}
+
+    :root{
+		--font-primary: 'ClashGrotesk','Helvetica', sans-serif;
+		--font-secondary: 'Inconsolata','Arial', sans-serif;
+		--color-light-primary : #F0EBDD;
+		--color-primary: #674636;
+		--color-secondary: #85A8F1;
+		--color-background: #F0EBDD;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: var(--font-primary);
+		margin: 0;
+		padding: 0;
+	}
+
+    p{
+        font: var(--font-secondary) 16px;
+    }
+
+	body {
+		font-family: var(--font-secondary);
+		margin: 0;
+		padding: 0;
+		background-color: var(--color-background);
+		color: var(--color-primary);
+	}
+
+    .wrapper{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
