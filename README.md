@@ -1,46 +1,98 @@
-# Astro Starter Kit: Basics
+# KELX | Développeur Fullstack 🚀
 
-```sh
-npm create astro@latest -- --template basics
+Bienvenue sur mon portfolio ! Je suis **KELX**, développeur fullstack passionné basé à **Bordeaux**, spécialisé dans la création d'applications web modernes et performantes.
+
+---
+
+## 👨‍💻 À propos de moi
+
+Je suis un développeur fullstack avec une expertise en **frontend** et **backend**, capable de transformer des idées en solutions digitales complètes. Mon approche combine :
+
+- 🎨 **Design & UX** : Interfaces intuitives et réactives
+- ⚡ **Performance** : Code optimisé et scalable
+- 🔒 **Sécurité** : Bonnes pratiques et standards du secteur
+- 🤝 **Collaboration** : Communication claire et work in progress transparent
+
+---
+
+## 🛠️ Stack Technique
+
+### Frontend
+- **Langages** : JavaScript es6+, JQuery
+- **Frameworks** : Astro, React
+- **Styling** : Sass, Tailwind CSS, CSS moderne, Sass
+- **Outils** : TypeScript, Webpack, Vite
+
+### Backend
+- **Langages** : JavaScript/Node.js, PHP
+- **Frameworks** : Laravel
+- **Bases de données** : PostgreSQL, MySQL
+- **APIs** : REST, GraphQL
+
+### DevOps & Outils
+- **CMS** : Wordpress
+- **Version control** : Git, GitHub
+- **Déploiement** : Docker, CI/CD
+- **Autres** : npm, Linux/macOS
+
+---
+
+## 📋 Ce que je peux faire pour vous
+
+✅ Développer des **applications web fullstack** de A à Z  
+✅ Créer des **interfaces modernes et responsive**  
+✅ Mettre en place des **APIs robustes et documentées**  
+✅ Optimiser la **performance** et la **SEO**  
+✅ Intégrer des **systèmes de paiement** et d'authentification  
+✅ Refactoriser et **maintenir du code legacy**  
+
+---
+
+## 🌍 Localisation
+
+📍 **Bordeaux, France** - Disponible pour du télétravail
+
+---
+
+## 📬 Me contacter
+
+Pour discuter de votre projet ou toute collaboration :
+
+- **Email** : [contact@kelx.dev](mailto:contact@kelx.dev)
+- **GitHub** : [Kelx0](https://github.com/Kelx0/)
+- **LinkedIn** : [https://linkedin.com/in/kevin-lacroix](https://linkedin.com/in/kevin-lacroix)
+
+---
+
+## 📦 Ce projet
+
+Ce portfolio est construit avec :
+- **Astro** : Framework moderne pour sites statiques et SSR
+- **Sass** : Pour un styling structuré
+- **normalize.css** : Pour une compatibilité cross-browser
+
+### Démarrer le projet
+
+```bash
+# Installation des dépendances
+npm install
+
+# Lancer le serveur de développement
+npm run dev
+
+# Build pour la production
+npm run build
+
+# Prévisualiser la version produite
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 📄 Licence
 
-Inside of your Astro project, you'll see the following folders and files:
+Ce porfolio est personnel et unique à KELX.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+---
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+**Merci de votre visite ! 🙌** 
