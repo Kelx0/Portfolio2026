@@ -60,7 +60,8 @@ Pour discuter de votre projet ou toute collaboration :
 
 - **Email** : [contact@kelx.dev](mailto:contact@kelx.dev)
 - **GitHub** : [Kelx0](https://github.com/Kelx0/)
-- **LinkedIn** : [https://linkedin.com/in/kevin-lacroix](https://linkedin.com/in/kevin-lacroix)
+- **LinkedIn** : [Kevin Lacroix](https://linkedin.com/in/kevin-lacroix)
+- **Instagram** : [__kelx__](https://www.instagram.com/__kelx__)
 
 ---
 
