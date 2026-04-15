@@ -9,6 +9,7 @@ interface Props {
 }
 
 const { lang = 'en' } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const localeMap = { en: 'en_US', fr: 'fr_FR', es: 'es_ES' };
 ---
 
@@ -18,11 +19,11 @@ const localeMap = { en: 'en_US', fr: 'fr_FR', es: 'es_ES' };
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<!-- FAVICON -->
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="icon" type="image/png" href={`${base}/favicon-96x96.png`} sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+		<link rel="shortcut icon" href={`${base}/favicon.ico`} />
+		<link rel="apple-touch-icon" sizes="180x180" href={`${base}/apple-touch-icon.png`} />
+		<link rel="manifest" href={`${base}/site.webmanifest`} />
 		<!-- END FAVICON -->
 		<meta name="generator" content={Astro.generator} />
 		<title>{t(lang, 'meta.title')}</title>
@@ -41,8 +42,8 @@ const localeMap = { en: 'en_US', fr: 'fr_FR', es: 'es_ES' };
 		<meta name="twitter:card" content="summary_large_image" />
 		
 		<!-- FONTS -->
-		<link rel="preload" href="/fonts/ClashGrotesk/ClashGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin />
-		<link rel="preload" href="/fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin />
+		<link rel="preload" href={`${base}/fonts/ClashGrotesk/ClashGrotesk-Variable.woff2`} as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href={`${base}/fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf`} as="font" type="font/ttf" crossorigin />
 		<!-- END FONTS -->
 	</head>
 	<body>

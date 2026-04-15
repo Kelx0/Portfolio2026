@@ -30,14 +30,17 @@ export function getLocalizedData<T extends Record<string, any>>(data: T, lang: L
   return String(data);
 }
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 export function getLangFromUrl(url: URL): Lang {
-  const [, lang] = url.pathname.split('/');
+  const path = url.pathname.replace(base, '');
+  const [, lang] = path.split('/');
   if (lang in languages) return lang as Lang;
   return defaultLang;
 }
 
 export function getLocalizedUrl(lang: Lang, hash?: string): string {
-  return `/${lang}/${hash ? '#' + hash : ''}`;
+  return `${base}/${lang}/${hash ? '#' + hash : ''}`;
 }
 
 export function formatDate(dateStr: string | null, lang: Lang): string {

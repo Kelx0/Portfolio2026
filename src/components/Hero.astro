@@ -9,6 +9,7 @@ interface Props {
 }
 
 const { lang } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <section id="hero" class="hero wrapper">
     <div class="hero-content">
@@ -18,9 +19,9 @@ const { lang } = Astro.props;
         <p class="hero-subtitle">{profile.subtitle[lang]}</p>
         <p class="hero-location">{profile.location[lang]}</p>
         <div class="hero-cta">
-            <a href={`/${lang}/#projects`} class="btn btn-primary">{t(lang, 'hero.cta')}</a>
+            <a href={`${base}/${lang}/#projects`} class="btn btn-primary">{t(lang, 'hero.cta')}</a>
             {profile.resumeUrl[lang] && (
-                <a href={profile.resumeUrl[lang]} class="btn btn-outline" target="_blank" rel="noopener">
+                <a href={`${base}${profile.resumeUrl[lang]}`} class="btn btn-outline" target="_blank" rel="noopener">
                     {t(lang, 'hero.downloadCv')}
                 </a>
             )}
@@ -28,7 +29,7 @@ const { lang } = Astro.props;
     </div>
     <div class="hero-right">
         <div class="hero-photo">
-            <img src="/images/profile.png" alt={profile.name} width="280" height="280" loading="eager" />
+            <img src={`${base}/images/profile.png`} alt={profile.name} width="280" height="280" loading="eager" />
         </div>
         <div class="hero-badge">
             <span class="badge-text">{profile.availability[lang]}</span>

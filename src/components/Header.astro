@@ -7,6 +7,7 @@ interface Props {
 }
 
 const { lang } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const date = new Date();
 ---
 <header class="header wrapper">
@@ -15,19 +16,19 @@ const date = new Date();
     </a>
     <nav>
         <ul>
-            <li><a href={`/${lang}/#hero`}>{t(lang, 'nav.home')}</a></li>
-            <li><a href={`/${lang}/#about`}>{t(lang, 'nav.about')}</a></li>
-            <li><a href={`/${lang}/#experience`}>{t(lang, 'nav.experience')}</a></li>
-            <li><a href={`/${lang}/#projects`}>{t(lang, 'nav.projects')}</a></li>
-            <li><a href={`/${lang}/#skills`}>{t(lang, 'nav.skills')}</a></li>
-            <li><a href={`/${lang}/#contact`}>{t(lang, 'nav.contact')}</a></li>
+            <li><a href={`${base}/${lang}/#hero`}>{t(lang, 'nav.home')}</a></li>
+            <li><a href={`${base}/${lang}/#about`}>{t(lang, 'nav.about')}</a></li>
+            <li><a href={`${base}/${lang}/#experience`}>{t(lang, 'nav.experience')}</a></li>
+            <li><a href={`${base}/${lang}/#projects`}>{t(lang, 'nav.projects')}</a></li>
+            <li><a href={`${base}/${lang}/#skills`}>{t(lang, 'nav.skills')}</a></li>
+            <li><a href={`${base}/${lang}/#contact`}>{t(lang, 'nav.contact')}</a></li>
         </ul>
     </nav>
     <div class="header-right">
         <div class="lang-switcher">
             {Object.entries(languages).map(([code, label]) => (
                 <a
-                    href={`/${code}/`}
+                    href={`${base}/${code}/`}
                     class:list={['lang-link', { active: code === lang }]}
                     aria-label={label}
                 >
