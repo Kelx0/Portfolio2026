@@ -2,12 +2,8 @@
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
+  site: "https://kelx0.github.io",
+  base: "/Portfolio2026",
   trailingSlash: "always",
-  // Prod
-  // site: "https://www.kelx.fr/",
-  // Local
-  site: "http://localhost:4321/",
-  base: "/",
-  trailingSlash: "always",
-  output: "server",
+  output: "static",
 });

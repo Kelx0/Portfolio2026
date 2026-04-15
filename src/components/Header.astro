@@ -1,25 +1,48 @@
 ---
-const date = new Date(); 
-console.log();
+import { t, languages, getLocalizedUrl } from '../i18n/utils';
+import type { Lang } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const date = new Date();
 ---
 <header class="header wrapper">
-    <a href={Astro.site?.href || "/"} class="logo">
-        <h1 class="title">KELX</h1>
+    <a href={getLocalizedUrl(lang)} class="logo">
+        <span class="title">KELX</span>
     </a>
     <nav>
         <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href={`/${lang}/#hero`}>{t(lang, 'nav.home')}</a></li>
+            <li><a href={`/${lang}/#about`}>{t(lang, 'nav.about')}</a></li>
+            <li><a href={`/${lang}/#experience`}>{t(lang, 'nav.experience')}</a></li>
+            <li><a href={`/${lang}/#projects`}>{t(lang, 'nav.projects')}</a></li>
+            <li><a href={`/${lang}/#skills`}>{t(lang, 'nav.skills')}</a></li>
+            <li><a href={`/${lang}/#contact`}>{t(lang, 'nav.contact')}</a></li>
         </ul>
     </nav>
-    <p class="year">@2020-{date.getFullYear()}</p>
+    <div class="header-right">
+        <div class="lang-switcher">
+            {Object.entries(languages).map(([code, label]) => (
+                <a
+                    href={`/${code}/`}
+                    class:list={['lang-link', { active: code === lang }]}
+                    aria-label={label}
+                >
+                    {code.toUpperCase()}
+                </a>
+            ))}
+        </div>
+    </div>
 </header>
 
 <style lang="scss">
+@use '../assets/styles/breakpoints' as *;
+
 .header{
-    padding-top: 10px;
+    padding:20px 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,22 +52,29 @@ console.log();
     text-decoration: none;
     color: var(--color-primary);
      .title{
-        font-size: 16px;    
+        font-family: var(--font-primary);
+        font-size: 16px;
+        font-weight: 700;
     }
    }
 
     nav{
+        @include to(tablet) {
+            display: none;
+        }
         ul{
             list-style: none;
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
+            padding: 0;
+            margin: 0;
 
             li{
                 a{
                     text-decoration: none;
                     color: inherit;
                     font-family: var(--font-secondary);
-                    font-size: 14px;
+                    font-size: 13px;
                     font-weight: 300;
                     font-stretch: 130%;
                     text-transform: uppercase;
@@ -71,11 +101,49 @@ console.log();
         }
     }
 
+    .header-right{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .lang-switcher{
+        display: flex;
+        gap: 0.25rem;
+
+        .lang-link{
+            text-decoration: none;
+            color: var(--color-primary);
+            font-family: var(--font-secondary);
+            font-size: 12px;
+            font-weight: 400;
+            padding: 2px 6px;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+            opacity: 0.5;
+
+            &.active{
+                opacity: 1;
+                font-weight: 700;
+                background: var(--color-primary);
+                color: var(--color-background);
+            }
+
+            &:hover:not(.active){
+                opacity: 0.8;
+            }
+        }
+    }
+
     .year{
         font-family: var(--font-secondary);
         font-size: 14px;
         font-weight: 700;
         font-stretch: 120%;
+
+        @include to(tablet) {
+            display: none;
+        }
     }
 }
 </style>

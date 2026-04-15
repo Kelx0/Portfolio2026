@@ -1,0 +1,171 @@
+---
+import { t, formatDate } from '../i18n/utils';
+import type { Lang } from '../i18n/utils';
+import experiences from '../data/experiences.json';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+<section id="experience" class="experience wrapper">
+    <h2 class="section-title">{t(lang, 'experience.title')}</h2>
+    <div class="timeline">
+        {experiences.map((exp) => (
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="exp-role">{exp.role[lang]}</h3>
+                            <p class="exp-company">{exp.company} — {exp.location}</p>
+                        </div>
+                        <span class="exp-date">
+                            {formatDate(exp.startDate, lang)} — {exp.endDate ? formatDate(exp.endDate, lang) : t(lang, 'experience.present')}
+                        </span>
+                    </div>
+                    <ul class="exp-list">
+                        {exp.description[lang].map((item: string) => (
+                            <li>{item}</li>
+                        ))}
+                    </ul>
+                    <div class="exp-tags">
+                        {exp.tags.map((tag: string) => (
+                            <span class="tag">{tag}</span>
+                        ))}
+                    </div>
+                </div>
+            </article>
+        ))}
+    </div>
+</section>
+
+<style lang="scss">
+@use '../assets/styles/breakpoints' as *;
+
+.experience {
+    padding: 5rem 20px;
+
+    .timeline {
+        margin-top: 2rem;
+        position: relative;
+        padding-left: 2rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(240, 235, 221, 0.2);
+        }
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .timeline-marker {
+        position: absolute;
+        left: -2rem;
+        top: 0.25rem;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--color-background);
+        transform: translateX(-5px);
+    }
+
+    .timeline-content {
+        padding: 1.25rem 1.5rem;
+        background: rgba(240, 235, 221, 0.07);
+        border-radius: 8px;
+        border: 1px solid rgba(240, 235, 221, 0.12);
+    }
+
+    .timeline-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        @include to(tablet) {
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+    }
+
+    .exp-role {
+        font-family: var(--font-primary);
+        font-size: 1.15rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .exp-company {
+        font-family: var(--font-secondary);
+        font-size: 0.85rem;
+        opacity: 0.6;
+        margin: 0.25rem 0 0;
+    }
+
+    .exp-date {
+        font-family: var(--font-secondary);
+        font-size: 0.8rem;
+        font-weight: 500;
+        white-space: nowrap;
+        opacity: 0.5;
+        text-transform: capitalize;
+    }
+
+    .exp-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1rem;
+
+        li {
+            font-family: var(--font-secondary);
+            font-size: 0.88rem;
+            line-height: 1.6;
+            font-weight: 300;
+            font-stretch: 110%;
+            padding: 0.2rem 0;
+            padding-left: 1rem;
+            position: relative;
+
+            &::before {
+                content: '→';
+                position: absolute;
+                left: 0;
+                opacity: 0.4;
+            }
+        }
+    }
+
+    .exp-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+
+    .tag {
+        font-family: var(--font-secondary);
+        font-size: 0.7rem;
+        font-weight: 500;
+        padding: 0.2rem 0.6rem;
+        border-radius: 3px;
+        background: var(--color-background);
+        color: var(--color-primary);
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+}
+</style>

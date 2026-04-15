@@ -1,0 +1,43 @@
+{
+  "name": "Kevin Lacroix",
+  "initials": "KELX",
+  "email": "contact@kelx.fr",
+  "linkedin": "https://linkedin.com/in/kevin-lacroix",
+  "github": "https://github.com/Kelx0",
+  "website": "https://www.kelx.fr",
+  "title": {
+    "en": "Full-Stack Web Developer",
+    "fr": "Développeur Web Full-Stack",
+    "es": "Desarrollador Web Full-Stack"
+  },
+  "subtitle": {
+    "en": "PHP / Laravel / WordPress / React / Vue / Astro",
+    "fr": "PHP / Laravel / WordPress / React / Vue / Astro",
+    "es": "PHP / Laravel / WordPress / React / Vue / Astro"
+  },
+  "location": {
+    "en": "France / Spain – Remote",
+    "fr": "France / Espagne – Remote",
+    "es": "Francia / España – Remoto"
+  },
+  "bio": {
+    "en": "Full-Stack Web Developer with 5+ years of experience in digital agencies, specialized in PHP 8+, Laravel, and WordPress custom development, with strong front-end expertise using React and Vue. Experienced in delivering end-to-end web projects, from UI integration to backend development, performance optimization, and deployment. Comfortable working in agile, multidisciplinary teams and with international clients.",
+    "fr": "Développeur Web Senior avec plus de 5 ans d'expérience en agence digitale, spécialisé en PHP/Laravel et technologies front-end modernes (React, Vue). Expertise en développement WordPress sur mesure, intégration UI et expériences interactives. Habitué à gérer des projets de bout en bout, du design d'interface au développement et à la mise en production, au sein d'équipes agiles et pluridisciplinaires.",
+    "es": "Desarrollador Web Full-Stack con más de 5 años de experiencia en agencias digitales, especializado en PHP 8+, Laravel y desarrollo WordPress a medida, con fuerte experiencia en front-end usando React y Vue. Experimentado en la entrega de proyectos web de principio a fin, desde la integración UI hasta el desarrollo backend, optimización del rendimiento y despliegue."
+  },
+  "availability": {
+    "en": "Available for freelance & full-time opportunities",
+    "fr": "Disponible pour missions freelance & CDI",
+    "es": "Disponible para freelance y oportunidades a tiempo completo"
+  },
+  "resumeUrl": {
+    "en": "/cv/cv-en.pdf",
+    "fr": "/cv/cv-fr.pdf",
+    "es": "/cv/cv-en.pdf"
+  },
+  "languages": [
+    { "name": { "en": "French", "fr": "Français", "es": "Francés" }, "level": { "en": "Native", "fr": "Natif", "es": "Nativo" } },
+    { "name": { "en": "English", "fr": "Anglais", "es": "Inglés" }, "level": { "en": "Fluent", "fr": "Courant", "es": "Fluido" } },
+    { "name": { "en": "Spanish", "fr": "Espagnol", "es": "Español" }, "level": { "en": "Intermediate (B1-B2)", "fr": "Intermédiaire (B1-B2)", "es": "Intermedio (B1-B2)" } }
+  ]
+}

@@ -1,8 +1,4 @@
 ---
-import Header from '../components/Header.astro';
-import Layout from '../layouts/Layout.astro';
+import { defaultLang } from '../i18n/utils';
+return Astro.redirect(`/${defaultLang}/`);
 ---
-
-<Layout>
-	<Header />
-</Layout>

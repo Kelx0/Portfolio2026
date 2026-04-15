@@ -1,0 +1,92 @@
+---
+import { t } from '../i18n/utils';
+import type { Lang } from '../i18n/utils';
+import profile from '../data/profile.json';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+<section id="about" class="about wrapper">
+    <h2 class="section-title">{t(lang, 'about.title')}</h2>
+    <div class="about-grid">
+        <div class="about-text">
+            <p>{profile.bio[lang]}</p>
+        </div>
+        <div class="about-languages">
+            <h3 class="about-subtitle">{t(lang, 'about.languages')}</h3>
+            <ul class="languages-list">
+                {profile.languages.map((language) => (
+                    <li>
+                        <span class="lang-name">{language.name[lang]}</span>
+                        <span class="lang-level">{language.level[lang]}</span>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+@use '../assets/styles/breakpoints' as *;
+
+.about {
+    padding: 5rem 20px;
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        margin-top: 2rem;
+
+        @include to(tablet) {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+    }
+
+    .about-text {
+        p {
+            font-family: var(--font-secondary);
+            font-size: 1rem;
+            line-height: 1.8;
+            font-weight: 300;
+            font-stretch: 110%;
+            margin: 0;
+        }
+    }
+
+    .about-subtitle {
+        font-family: var(--font-primary);
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0 0 1rem;
+    }
+
+    .languages-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(103, 70, 54, 0.1);
+            font-family: var(--font-secondary);
+            font-size: 0.9rem;
+
+            .lang-name {
+                font-weight: 500;
+            }
+
+            .lang-level {
+                opacity: 0.6;
+                font-weight: 300;
+            }
+        }
+    }
+}
+</style>

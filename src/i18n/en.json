@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "cta": "View my work",
+    "downloadCv": "Download CV"
+  },
+  "about": {
+    "title": "About me",
+    "languages": "Languages"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present"
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View project",
+    "viewCode": "View code",
+    "featured": "Featured"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Have a project in mind? Let's work together.",
+    "emailMe": "Email me",
+    "orFindMe": "Or find me on"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "madeWith": "Made with"
+  },
+  "meta": {
+    "title": "KELX | Full-Stack Developer",
+    "description": "Full-Stack Web Developer specialized in PHP, Laravel, React, Vue, and Astro. Building fast, modern web experiences.",
+    "ogLocale": "en_US"
+  }
+}

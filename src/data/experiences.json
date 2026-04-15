@@ -1,0 +1,119 @@
+[
+  {
+    "id": "agence-buzz",
+    "company": "Agence Buzz",
+    "role": {
+      "en": "Full-Stack Developer",
+      "fr": "Développeur Full-Stack",
+      "es": "Desarrollador Full-Stack"
+    },
+    "location": "Mérignac, France",
+    "startDate": "2024-05",
+    "endDate": null,
+    "description": {
+      "en": [
+        "Developed custom websites, event platforms, and e-commerce solutions for agency clients",
+        "Built custom WordPress themes and plugins focused on performance, scalability, and maintainability",
+        "Developed front-end interfaces using React, Astro, SCSS, and JavaScript (ES6+)",
+        "Created interactive and animated experiences using Three.js and WebGL",
+        "Integrated REST and GraphQL APIs",
+        "Designed and optimized MySQL databases",
+        "Developed a mobile application using React Native (Expo)",
+        "Implemented email automation and CRM workflows using Brevo"
+      ],
+      "fr": [
+        "Développement de sites vitrines, plateformes événementielles et e-commerce",
+        "Développement de thèmes / plugins WordPress sur mesure (avec ou sans page builder)",
+        "Développement front-end avec React, Astro, SCSS, JavaScript Vanilla et jQuery",
+        "Création d'expériences interactives et animées avec Three.js et WebGL",
+        "Intégration d'APIs REST et GraphQL",
+        "Conception et optimisation de bases de données (MySQL)",
+        "Développement d'une application mobile avec React Native (Expo)",
+        "Automatisation emailing et intégration CRM via Brevo"
+      ],
+      "es": [
+        "Desarrollo de sitios web personalizados, plataformas de eventos y soluciones e-commerce",
+        "Construcción de temas y plugins WordPress personalizados enfocados en rendimiento y escalabilidad",
+        "Desarrollo de interfaces front-end usando React, Astro, SCSS y JavaScript (ES6+)",
+        "Creación de experiencias interactivas y animadas con Three.js y WebGL",
+        "Integración de APIs REST y GraphQL",
+        "Diseño y optimización de bases de datos MySQL",
+        "Desarrollo de aplicación móvil con React Native (Expo)",
+        "Automatización de emails y flujos CRM con Brevo"
+      ]
+    },
+    "tags": ["PHP", "WordPress", "React", "Astro", "Three.js", "MySQL", "React Native"]
+  },
+  {
+    "id": "heaven",
+    "company": "Heaven",
+    "role": {
+      "en": "Front-End Developer",
+      "fr": "Développeur Front-End",
+      "es": "Desarrollador Front-End"
+    },
+    "location": "Paris, France",
+    "startDate": "2021-01",
+    "endDate": "2023-12",
+    "description": {
+      "en": [
+        "Developed and integrated custom WordPress themes",
+        "Implemented front-end features using PHP, SCSS, JavaScript, and jQuery",
+        "Worked in agile environments with designers and developers",
+        "Improved website performance, SEO, and accessibility",
+        "Contributed to high-visibility brand and marketing projects"
+      ],
+      "fr": [
+        "Développement et intégration de thèmes WordPress personnalisés",
+        "Intégration front-end en PHP, SCSS, JavaScript Vanilla et jQuery",
+        "Travail en équipe agile avec designers et développeurs",
+        "Optimisation des performances, SEO et responsive design",
+        "Participation à des projets de marque à forte visibilité"
+      ],
+      "es": [
+        "Desarrollo e integración de temas WordPress personalizados",
+        "Implementación de funcionalidades front-end con PHP, SCSS, JavaScript y jQuery",
+        "Trabajo en entornos ágiles con diseñadores y desarrolladores",
+        "Mejora del rendimiento web, SEO y accesibilidad",
+        "Contribución a proyectos de marca de alta visibilidad"
+      ]
+    },
+    "tags": ["PHP", "WordPress", "SCSS", "JavaScript", "jQuery"]
+  },
+  {
+    "id": "blacksoap",
+    "company": "Blacksoap",
+    "role": {
+      "en": "Creative Director / Web Integrator",
+      "fr": "Directeur Créatif / Intégrateur Web",
+      "es": "Director Creativo / Integrador Web"
+    },
+    "location": "Paris, France",
+    "startDate": "2018-01",
+    "endDate": "2021-12",
+    "description": {
+      "en": [
+        "Led 3D conception and production of in-store brand corners for clients including Adidas, Levi's, Under Armour, Reebok",
+        "Designed and developed interactive web applications and in-store games for brand activations",
+        "Integrated websites and digital experiences for clients using WordPress",
+        "Managed the full production cycle: 3D modeling, technical drawings, print-ready files, and on-site installation",
+        "Coordinated internal teams and external partners"
+      ],
+      "fr": [
+        "Pilotage de la conception et production 3D de corners de marques pour Adidas, Levi's, Under Armour, Reebok",
+        "Conception et développement d'applications web et jeux interactifs pour animations en points de vente",
+        "Intégration de sites web et expériences digitales sous WordPress",
+        "Gestion complète des projets : modélisation 3D, fichiers techniques, jusqu'au montage final",
+        "Coordination des équipes internes et des partenaires externes"
+      ],
+      "es": [
+        "Dirección de concepción y producción 3D de corners de marca para Adidas, Levi's, Under Armour, Reebok",
+        "Diseño y desarrollo de aplicaciones web y juegos interactivos para activaciones de marca",
+        "Integración de sitios web y experiencias digitales con WordPress",
+        "Gestión completa del ciclo de producción: modelado 3D, planos técnicos, archivos de impresión",
+        "Coordinación de equipos internos y socios externos"
+      ]
+    },
+    "tags": ["WordPress", "3D", "JavaScript", "Brand Activation"]
+  }
+]

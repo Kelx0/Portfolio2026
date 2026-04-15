@@ -1,0 +1,100 @@
+[
+  {
+    "id": "maison-lafayette",
+    "title": "Maison Lafayette",
+    "description": {
+      "en": "Premium rental apartment website in the heart of Bordeaux. Custom WordPress theme with elegant animations, booking system integration, and apartment showcase with smooth scrolling experiences.",
+      "fr": "Site vitrine d'appartements haut de gamme en location à Bordeaux. Thème WordPress sur mesure avec animations élégantes, intégration système de réservation et présentation des appartements avec expérience de défilement fluide.",
+      "es": "Sitio web de apartamentos de alquiler premium en el corazón de Burdeos. Tema WordPress personalizado con animaciones elegantes, integración de sistema de reservas y presentación de apartamentos."
+    },
+    "image": "/images/projects/maison-lafayette.jpg",
+    "tags": ["PHP", "WordPress", "SCSS", "jQuery", "JavaScript ES6+", "GSAP"],
+    "url": "https://www.maison-lafayette.com/",
+    "github": "",
+    "featured": false
+  },
+   {
+    "id": "agence-buzz",
+    "title": "Agence Buzz - Site",
+    "description": {
+      "en": "Corporate website for Agence Buzz, a creative communication agency. Custom WordPress theme rebuilt with Astro.js for performance, featuring smooth scroll animations with GSAP and Lenis, and modern design.",
+      "fr": "Site vitrine de l'Agence Buzz, agence de communication créative. Thème WordPress sur mesure reconstruit avec Astro.js pour la performance, animations de défilement fluides avec GSAP et Lenis, et design moderne.",
+      "es": "Sitio web corporativo de Agence Buzz, agencia de comunicación creativa. Tema WordPress personalizado reconstruido con Astro.js para rendimiento, animaciones de scroll suaves con GSAP y Lenis, y diseño moderno."
+    },
+    "image": "/images/projects/agence-buzz.jpg",
+    "tags": ["WordPress", "SASS","JavaScript ES6+","Astro.js", "GSAP", "Lenis"],
+    "url": "https://www.agencebuzz.com/",
+    "github": "",
+    "featured": false
+  },
+  {
+    "id": "enterprise-dashboard",
+    "title": "Enterprise Dashboard",
+    "description": {
+      "en": "Full-featured enterprise management dashboard: leave management, commercial CRM, project management, QR code generator, user & group management, and token-based authentication system. Dockerized full-stack application.",
+      "fr": "Dashboard complet de gestion d'entreprise : gestion de congés, CRM commercial, gestion de projet, générateur de QR codes, gestion utilisateurs & groupes, et système d'authentification par tokens. Application full-stack dockerisée.",
+      "es": "Panel de gestión empresarial completo: gestión de vacaciones, CRM comercial, gestión de proyectos, generador de códigos QR, gestión de usuarios y grupos, y sistema de autenticación por tokens. Aplicación full-stack dockerizada."
+    },
+    "image": "/images/projects/agence-buzz.jpg",
+    "tags": ["Laravel", "MySQL", "Nuxt.js", "Docker", "REST API"],
+    "url": "",
+    "github": "https://github.com/kevin-lacroix",
+    "featured": false
+  },
+  {
+    "id": "hematolib",
+    "title": "HématoLib (HLA)",
+    "description": {
+      "en": "Institutional website for the French association of liberal hematologists. Features a member directory (47 centers, 78 hematologists), news system, event management, and member-only area.",
+      "fr": "Site institutionnel de l'association française des hématologues libéraux. Annuaire de membres (47 centres, 78 hématologues), système d'actualités, gestion d'événements et espace membres.",
+      "es": "Sitio institucional de la asociación francesa de hematólogos liberales. Directorio de miembros (47 centros, 78 hematólogos), sistema de noticias, gestión de eventos y área de miembros."
+    },
+    "image": "/images/projects/hla.jpg",
+    "tags": ["PHP", "WordPress", "SCSS", "JavaScript"],
+    "url": "https://www.hematolib.com/",
+    "github": "",
+    "featured": false
+  },
+  {
+    "id": "a2f-33",
+    "title": "A2F",
+    "description": {
+      "en": "Corporate website for A2F, a telecom infrastructure specialist in fiber optic deployment and maintenance across Europe. Showcases services, achievements, and news with animated sections.",
+      "fr": "Site corporate d'A2F, spécialiste en déploiement et maintenance de réseaux de fibre optique en Europe. Présentation des services, réalisations et actualités avec sections animées.",
+      "es": "Sitio web corporativo de A2F, especialista en despliegue y mantenimiento de redes de fibra óptica en Europa. Presentación de servicios, logros y noticias con secciones animadas."
+    },
+    "image": "/images/projects/a2f.jpg",
+    "tags": ["PHP", "WordPress", "SCSS", "JavaScript"],
+    "url": "https://www.a2f-33.fr/",
+    "github": "",
+    "featured": false
+  },
+  {
+    "id": "buzz-travel",
+    "title": "Buzz Travel",
+    "description": {
+      "en": "Mobile travel application with full UI/UX design conceived from scratch. Cross-platform development with React Native and Expo, featuring custom animations and smooth user experience.",
+      "fr": "Application mobile de voyage avec design UI/UX complet conçu from scratch. Développement cross-platform avec React Native et Expo, animations personnalisées et expérience utilisateur fluide.",
+      "es": "Aplicación móvil de viajes con diseño UI/UX completo desde cero. Desarrollo multiplataforma con React Native y Expo, animaciones personalizadas y experiencia de usuario fluida."
+    },
+    "image": "/images/projects/buzz-travel.jpg",
+    "tags": ["React Native", "Expo", "UI/UX Design"],
+    "url": "",
+    "github": "",
+    "featured": false
+  },
+  {
+    "id": "camille-plunian",
+    "title": "Camille Plunian — Portfolio",
+    "description": {
+      "en": "Creative portfolio for art director Camille Plunian. Minimalist design with smooth scroll animations (Lenis), project showcases with custom transitions, and responsive layout.",
+      "fr": "Portfolio créatif de la directrice artistique Camille Plunian. Design minimaliste avec animations de défilement fluides (Lenis), showcase projets avec transitions sur mesure et layout responsive.",
+      "es": "Portfolio creativo de la directora artística Camille Plunian. Diseño minimalista con animaciones de scroll suaves (Lenis), showcase de proyectos con transiciones personalizadas y diseño responsive."
+    },
+    "image": "/images/projects/camille-plunian.jpg",
+    "tags": ["WordPress", "SASS", "jQuery", "JavaScript ES6+", "GSAP", "Lenis"],
+    "url": "https://camilleplunian.fr/",
+    "github": "",
+    "featured": false
+  }
+]
