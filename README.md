@@ -96,4 +96,4 @@ Ce porfolio est personnel et unique à KELX.
 
 ---
 
-**Merci de votre visite ! 🙌** 
+*Merci de votre visite ! 🙌* 
